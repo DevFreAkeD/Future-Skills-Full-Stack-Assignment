@@ -10,27 +10,27 @@ This is a RESTful API for managing Help Center cards. The API allows users to cr
 
 ## Installation and Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/DevFreAkeD/Future-Skills-Full-Stack-Assignment
    cd Future-Skills-Full-Stack-Assignment
 
-2. Navigate to server directory:
+2. **Navigate to server directory:**
     ```bash
     cd server
 
-3. Install Dependencies:
+3. **Install Dependencies:**
     ```bash
     npm install
 
-4. Create a .env file.
+4. **Create a .env file.**
    Replace `MONGODB_URI` with your MongoDB URI.
    
-5. Run Backend server:
+5. **Run Backend server:**
    ```bash
    node index.js
 
-6. Access the Server:
+6. **Access the Server:**
    Open a web browser and navigate to `http://localhost:8080`.
 
 ## API Testing Instructions
