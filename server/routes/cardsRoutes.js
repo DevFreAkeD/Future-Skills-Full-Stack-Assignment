@@ -24,4 +24,14 @@ router.post('/', async (req, res) => {
   }
 });
 
+// Get all cards
+router.get('/', async (req, res) => {
+    try {
+      const cards = await Card.find({});
+      res.status(200).json(cards);
+    } catch (error) {
+      res.status(500).json({ error: 'Error fetching cards', details: error.message });
+    }
+});  
+
 export default router;
