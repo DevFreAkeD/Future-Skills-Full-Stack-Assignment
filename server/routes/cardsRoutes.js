@@ -34,4 +34,20 @@ router.get('/', async (req, res) => {
     }
 });  
 
+// Get a specific card by title
+router.get('/:title', async (req, res) => {
+    try {
+      const { title } = req.params;
+      const card = await Card.findOne({ title });
+  
+      if (!card) {
+        return res.status(404).json({ error: 'Card not found' });
+      }
+  
+      res.status(200).json(card);
+    } catch (error) {
+      res.status(500).json({ error: 'Error fetching card', details: error.message });
+    }
+  });  
+
 export default router;
