@@ -1,8 +1,9 @@
 import React from "react";
+import HelpCenter from "./pages/HelpCenter";
 
 const App = () => {
   return (
-    <div>Help Center Frontend</div>
+    <HelpCenter />
   )
 }
 
