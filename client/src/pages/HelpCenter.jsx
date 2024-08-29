@@ -9,7 +9,7 @@ const HelpCenter = () => {
       <header className="fixed top-0 w-full z-50">
         <Header />
       </header>
-      <main className="max-h-screen mt-16">
+      <main className="max-h-full mt-16">
         <MainComponent />
       </main>
       <footer className="bottom-0 w-full">

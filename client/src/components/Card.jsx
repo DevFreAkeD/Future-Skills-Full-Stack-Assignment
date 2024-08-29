@@ -1,15 +1,12 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ title, description }) => {
   return (
-    <div className="bg-zinc-100 shadow-lg rounded-lg p-6 border border-gray-200">
-      <h3 className="text-xl font-semibold mb-4">CardTitle</h3>
-      <div className="border-t border-gray-300 my-4"></div>
-      
-      <div className="text-gray-700">
-        <p>
-          This is the card content. You can add more text or any other content here. Tailwind CSS allows you to style your card component easily, making it look clean and well-structured.
-        </p>
+    <div className="bg-zinc-100 shadow-lg rounded-lg p-6 border border-zinc-300">
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <div className="border-t border-zinc-300 my-2"></div>
+      <div className="text-zinc-700 text-md">
+        <p>{description}</p>
       </div>
     </div>
   );
